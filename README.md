@@ -7,7 +7,7 @@
 
 &nbsp;
 
-Welcome! [Batteries Included](https://www.batteriesincl.com) is your all-in-one
+Welcome! [Batteries Included](https://aiready.io) is your all-in-one
 platform for building and running modern applications. We take the complexity
 out of cloud infrastructure, giving you production-ready capabilities through an
 intuitive and easy-to-use interface.
@@ -38,8 +38,7 @@ intuitive and easy-to-use interface.
 
 The fastest way to experience Batteries Included:
 
-1. Visit [batteriesincl.com](https://www.batteriesincl.com) and create an
-   account
+1. Visit [youtube](https://youtu.be/fZce5Ru5XdY) and watch the demo
 2. Choose your installation type (cloud, local, or existing cluster)
 3. Run the provided installation command
 4. Access your ready-to-use infrastructure dashboard
@@ -190,9 +189,6 @@ different parts of the project.
 TLDR: `bix local bootstrap && bix local dev`
 
 ### Static
-
-`static` contains the code that builds and deploys
-[_Batteries Included_](https://www.batteriesincl.com).
 
 Public posts are in `static/src/content/posts`.
 
