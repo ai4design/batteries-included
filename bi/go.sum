@@ -104,8 +104,8 @@ github.com/distribution/reference v0.6.0 h1:0IXCQ5g4/QMHHkarYzh5l+u8T3t73zM5Qvfr
 github.com/distribution/reference v0.6.0/go.mod h1:BbU0aIcezP1/5jX/8MP0YiH4SdvB5Y4f/wlDRiLyi3E=
 github.com/djherbis/times v1.6.0 h1:w2ctJ92J8fBvWPxugmXIv7Nz7Q3iDMKNx9v5ocVH20c=
 github.com/djherbis/times v1.6.0/go.mod h1:gOHeRAz2h+VJNZ5Gmc/o7iD9k4wW7NMVqieYCY99oc0=
-github.com/docker/docker v28.2.2+incompatible h1:CjwRSksz8Yo4+RmQ339Dp/D2tGO5JxwYeqtMOEe0LDw=
-github.com/docker/docker v28.2.2+incompatible/go.mod h1:eEKB0N0r5NX/I1kEveEz05bcu8tLC/8azJZsviup8Sk=
+github.com/docker/docker v28.3.0+incompatible h1:ffS62aKWupCWdvcee7nBU9fhnmknOqDPaJAMtfK0ImQ=
+github.com/docker/docker v28.3.0+incompatible/go.mod h1:eEKB0N0r5NX/I1kEveEz05bcu8tLC/8azJZsviup8Sk=
 github.com/docker/go-connections v0.5.0 h1:USnMq7hx7gwdVZq1L49hLXaFtUdTADjXGp+uj1Br63c=
 github.com/docker/go-connections v0.5.0/go.mod h1:ov60Kzw0kKElRwhNs9UlUHAE/F9Fe6GLaXnqyDdmEXc=
 github.com/docker/go-units v0.5.0 h1:69rxXcBk27SvSaaxTtLh/8llcHD8vYHT7WSdRZ/jvr4=
@@ -142,8 +142,8 @@ github.com/go-git/go-git-fixtures/v4 v4.3.2-0.20231010084843-55a94097c399 h1:eMj
 github.com/go-git/go-git-fixtures/v4 v4.3.2-0.20231010084843-55a94097c399/go.mod h1:1OCfN199q1Jm3HZlxleg+Dw/mwps2Wbk9frAWm+4FII=
 github.com/go-git/go-git/v5 v5.16.2 h1:fT6ZIOjE5iEnkzKyxTHK1W4HGAsPhqEqiSAssSO77hM=
 github.com/go-git/go-git/v5 v5.16.2/go.mod h1:4Ge4alE/5gPs30F2H1esi2gPd69R0C39lolkucHBOp8=
-github.com/go-jose/go-jose/v4 v4.1.0 h1:cYSYxd3pw5zd2FSXk2vGdn9igQU2PS8MuxrCOCl0FdY=
-github.com/go-jose/go-jose/v4 v4.1.0/go.mod h1:GG/vqmYm3Von2nYiB2vGTXzdoNKE5tix5tuc6iAd+sw=
+github.com/go-jose/go-jose/v4 v4.1.1 h1:JYhSgy4mXXzAdF3nUx3ygx347LRXJRrpgyU3adRmkAI=
+github.com/go-jose/go-jose/v4 v4.1.1/go.mod h1:BdsZGqgdO3b6tTc6LSE56wcDbMMLuPsw5d4ZD5f94kA=
 github.com/go-logr/logr v1.2.2/go.mod h1:jdQByPbusPIv2/zmleS9BjJVeZ6kBagPoEUsqbVz/1A=
 github.com/go-logr/logr v1.4.3 h1:CjnDlHq8ikf6E492q6eKboGOC0T8CDaOvkHCIg8idEI=
 github.com/go-logr/logr v1.4.3/go.mod h1:9T104GzyrTigFIr8wt5mBrctHMim0Nb2HLGrmQ40KvY=
@@ -329,8 +329,8 @@ github.com/pulumi/pulumi-cloudinit/sdk v1.4.12 h1:RzrePih6AOmTJfBCBQSjCG95nrvZhN
 github.com/pulumi/pulumi-cloudinit/sdk v1.4.12/go.mod h1:UIcbHtjQfkpjaeF2s1sIBxHUj0jSkxN1jkH13yqYI7E=
 github.com/pulumi/pulumi-tls/sdk/v5 v5.2.0 h1:lzcWRzw4VYfdm8mZe/3rZpLd2pNRV9ztgdXtKskl++Q=
 github.com/pulumi/pulumi-tls/sdk/v5 v5.2.0/go.mod h1:vdvPYss/IRxg3E/LrnklGFBb/4hQ5LAgIO+lSuvbyPY=
-github.com/pulumi/pulumi/sdk/v3 v3.178.0 h1:24jNMvy6cMshwmW88Jm3k8ON2M4d0U2ocemQRcQElXQ=
-github.com/pulumi/pulumi/sdk/v3 v3.178.0/go.mod h1:XA+4kQ4ja6b5miOG/l5zp3xdqoA4NoPpmp2SZ37JK40=
+github.com/pulumi/pulumi/sdk/v3 v3.181.0 h1:6XeYlG/mymtutRXlggcCLtxqBJPGCHNUGgoj4mapZQw=
+github.com/pulumi/pulumi/sdk/v3 v3.181.0/go.mod h1:YS7uQ+eoIV/Fco804Upv3jmz5pwo/MkLYmbGH3VgA9c=
 github.com/rivo/uniseg v0.2.0/go.mod h1:J6wj4VEh+S6ZtnVlnTBMWIodfgj8LQOQFoIToxlJtxc=
 github.com/rivo/uniseg v0.4.7 h1:WUdvkW8uEhrYfLC4ZzdpI2ztxP1I582+49Oc5Mq64VQ=
 github.com/rivo/uniseg v0.4.7/go.mod h1:FN3SvrM+Zdj16jyLfmOkMNblXMcoc8DfTHruCPUcx88=
