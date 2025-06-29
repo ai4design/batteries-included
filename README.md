@@ -87,8 +87,6 @@ If you want to try Batteries Included without creating an account, you can run
 it locally. Note that the installation will stop working after a few hours
 without being able to report status.
 
-- Download `bi` from the
-  [latest GitHub release](https://github.com/batteries-included/batteries-included/releases)
 - Ensure your machine has Docker or compatible software running and configured
   (Linux is best supported)
 - From `master`, run `bi start bootstrap/local.spec.json`
