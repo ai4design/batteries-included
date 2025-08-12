@@ -34,7 +34,7 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 5
     steps:
-      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4
+      - uses: actions/checkout@08c6903cd8c0fde910a37f88322edcfb5dd907a8 # v4
         with:
           persist-credentials: false
 
@@ -64,7 +64,7 @@ jobs:
           } >> "$GITHUB_ENV"
 
       - name: Check existing ASDF cache
-        uses: actions/cache/restore@5a3ec84eff668545956fd18022155c47e93e2684 # v4
+        uses: actions/cache/restore@0400d5f644dc74513175e3cd8d07132dd4860809 # v4
         id: asdf
         with:
           path: ${{ env.ASDF_PATHS }}
@@ -72,7 +72,7 @@ jobs:
           lookup-only: true
 
       - name: Check existing elixir cache
-        uses: actions/cache/restore@5a3ec84eff668545956fd18022155c47e93e2684 # v4
+        uses: actions/cache/restore@0400d5f644dc74513175e3cd8d07132dd4860809 # v4
         id: elixir
         with:
           path: ${{ env.ELIXIR_PATHS }}
@@ -80,7 +80,7 @@ jobs:
           lookup-only: true
 
       - name: Check existing Go cache
-        uses: actions/cache/restore@5a3ec84eff668545956fd18022155c47e93e2684 # v4
+        uses: actions/cache/restore@0400d5f644dc74513175e3cd8d07132dd4860809 # v4
         id: go
         with:
           path: ${{ env.GO_PATHS }}
@@ -88,7 +88,7 @@ jobs:
           lookup-only: true
 
       - name: Check existing bi cache
-        uses: actions/cache/restore@5a3ec84eff668545956fd18022155c47e93e2684 # v4
+        uses: actions/cache/restore@0400d5f644dc74513175e3cd8d07132dd4860809 # v4
         id: bi
         with:
           path: ${{ env.BI_PATHS }}
@@ -96,7 +96,7 @@ jobs:
           lookup-only: true
 
       - name: Check existing image cache
-        uses: actions/cache/restore@5a3ec84eff668545956fd18022155c47e93e2684 # v4
+        uses: actions/cache/restore@0400d5f644dc74513175e3cd8d07132dd4860809 # v4
         id: images
         with:
           path: ${{ env.IMAGE_PATHS }}
@@ -122,7 +122,7 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 15
     steps:
-      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4
+      - uses: actions/checkout@08c6903cd8c0fde910a37f88322edcfb5dd907a8 # v4
         with:
           persist-credentials: false
 
@@ -135,7 +135,7 @@ jobs:
         run: asdf reshim
 
       - name: Save ASDF cache
-        uses: actions/cache/save@5a3ec84eff668545956fd18022155c47e93e2684 # v4
+        uses: actions/cache/save@0400d5f644dc74513175e3cd8d07132dd4860809 # v4
         with:
           path: ${{ env.ASDF_PATHS }}
           key: ${{ needs.check-caches.outputs.asdf-hash-key }}
@@ -147,7 +147,7 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 15
     steps:
-      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4
+      - uses: actions/checkout@08c6903cd8c0fde910a37f88322edcfb5dd907a8 # v4
         with:
           persist-credentials: false
 
@@ -163,7 +163,7 @@ jobs:
         run: bin/bix mix dialyzer --plt
 
       - name: Save Elixir cache
-        uses: actions/cache/save@5a3ec84eff668545956fd18022155c47e93e2684 # v4
+        uses: actions/cache/save@0400d5f644dc74513175e3cd8d07132dd4860809 # v4
         id: elixir-cache
         with:
           path: ${{ env.ELIXIR_PATHS }}
@@ -176,7 +176,7 @@ jobs:
     runs-on: ubuntu-latest-m
     timeout-minutes: 20
     steps:
-      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4
+      - uses: actions/checkout@08c6903cd8c0fde910a37f88322edcfb5dd907a8 # v4
         with:
           persist-credentials: false
 
@@ -190,7 +190,7 @@ jobs:
         run: bin/bix go test
 
       - name: Save Go cache
-        uses: actions/cache/save@5a3ec84eff668545956fd18022155c47e93e2684 # v4
+        uses: actions/cache/save@0400d5f644dc74513175e3cd8d07132dd4860809 # v4
         id: go-cache
         with:
           path: ${{ env.GO_PATHS }}
@@ -202,7 +202,7 @@ jobs:
     runs-on: ubuntu-latest-m
     timeout-minutes: 10
     steps:
-      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4
+      - uses: actions/checkout@08c6903cd8c0fde910a37f88322edcfb5dd907a8 # v4
         with:
           persist-credentials: false
 
@@ -216,7 +216,7 @@ jobs:
         run: bin/bix go ensure-bi
 
       - name: Save `bi` cache
-        uses: actions/cache/save@5a3ec84eff668545956fd18022155c47e93e2684 # v4
+        uses: actions/cache/save@0400d5f644dc74513175e3cd8d07132dd4860809 # v4
         id: bi-cache
         with:
           path: |
@@ -234,7 +234,7 @@ jobs:
       contents: read
       packages: read
     steps:
-      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4
+      - uses: actions/checkout@08c6903cd8c0fde910a37f88322edcfb5dd907a8 # v4
         with:
           persist-credentials: false
 
@@ -242,7 +242,7 @@ jobs:
         uses: ./.github/actions/setup-asdf
 
       - name: Login to GHCR
-        uses: docker/login-action@74a5d142397b4f367a81961eba4e8cd7edddf772 # v3
+        uses: docker/login-action@184bdaa0721073962dff0199f1fb9940f07167d1 # v3
         with:
           registry: ghcr.io
           username: ${{ github.actor }}
@@ -256,7 +256,7 @@ jobs:
             /home/runner/work/_temp/base_images.tar
 
       - name: Save images cache
-        uses: actions/cache/save@5a3ec84eff668545956fd18022155c47e93e2684 # v4
+        uses: actions/cache/save@0400d5f644dc74513175e3cd8d07132dd4860809 # v4
         id: images-cache
         with:
           path: ${{ env.IMAGE_PATHS }}
